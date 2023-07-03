@@ -1,0 +1,50 @@
+1.select * from student;
+
+2.select namefirst , namelast from student;
+
+3. select * from student where id=10;
+
+4.select * from faculty;
+
+5. select namefirst from student where namefirst like'_A%';
+
+6.select namefirst from student where namefirst like'%A%';
+
+
+7.select * from student where dob='1986-12-14';
+
+8. select namefirst from student where namefirst like'R%';
+
+9.select namefirst firstname,namelast lastname from student;
+
+10.select * from student order by dob;
+
+11.select * from student where namefirst like's%'limit 2;
+
+12.select * from student where dob='1986-12-14';
+
+13. select * from modules where duration=1;
+
+14. select * from course_batches where capacity=80;
+
+15.select * from student_qualifications where name='be' and marks>70;
+
+16.select * from student_qualifications where name='be' and year=2017;
+
+17.select * from student_qualifications where name='be' and year=2017 and marks>80;
+
+18. select * from faculty_qualifications where name='be' and univesity='Harvard University';
+
+19. select * from course where duration=6;
+
+20.select * from modules where duration between 1 and 2 order by duration;
+
+21.select *,if(year(dob)<1980, "The student can vote", "The student cannot vote") from student
+
+22. select distinct university from student_qualifications;
+
+23. select * from student_qualifications order by marks desc limit 2;
+
+24.select * from student_qualifications order by marks asc limit 2;
+
+25.select * from student order by id desc limit 7;

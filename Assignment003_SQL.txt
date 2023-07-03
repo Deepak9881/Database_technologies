@@ -1,0 +1,15 @@
+1. select * from course;
+2. select namefirst, namelast from student;
+3. select namefirst, namelast, DOB, emailID from student;
+4.select * from student where id=15;
+5. select namefirst, namelast , emailid from student where namefirst='Nitish';
+6.select * from student where id>=12;
+7.select * from student where DOB='1980-12-01';
+8. select * from student_phone where studentid=5;
+9.select address from student_address where id=10;
+10.select * from faculty;
+11.select number from faculty_phone where facultyid=2;
+12. select number from student_phone where studentid=13;
+13.select * from modules;
+14. select * from course_modules where courseid=1;
+15. select * from course_batches where capacity=80;

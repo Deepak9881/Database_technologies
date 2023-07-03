@@ -1,0 +1,33 @@
+1.select *, count(*) from student;
+
+2.select *, count(*) R1 from student where year(dob)=1986;
+
+3. select *, count(*) from student where namefirst like"B%" ;
+
+4.select *, count(*) from student where monthname(dob)='July' ;
+
+5. select studentid from (select studentid,count(id) r1 from student_phone group by studentid)t1 where r1>2;
+
+6. select  count(distinct university) from student_qualifications;
+
+7. select university, count(university) from student_qualifications where name='be' group by university;
+
+8. select id, count(id) from student_qualifications where name='be';
+
+9. select id, count(id) from student_qualifications where not name='be';
+
+10.select marks, max(marks) from student_qualifications;
+
+11.select marks, min(marks) from student_qualifications;
+
+12. select name, count(name) from course_batches where starton='2016-02-01';
+
+13.select marks, count(marks) from student_qualifications where marks>60 and name='be';
+
+14.select marks, count(marks) from student_qualifications where marks>60 and name='be' and university='harvard university';
+
+15.select id, count(id) from course;
+
+16.select count(distinct university) from student_qualifications;
+
+17.select marks, max(marks) from student_qualifications where name='be';
